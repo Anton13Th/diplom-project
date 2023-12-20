@@ -1,0 +1,10 @@
+#cloud-config
+users:
+ - name: nagornov
+   groups: sudo
+   shell: /bin/bash
+   sudo: 'ALL=(ALL) NOPASSWD:ALL'
+   ssh-authorized-keys:
+     - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCZp1uFDvggsPhWEd5/CM2MwkeenDxG5PJZ3TwMqFL51W7JmkLxnrxw/5SVoZcLhGmj4UQQVRCW0CCi59CVTOBoFuRwhB87bT8wxUUnTK8QhnWAFhTUHlbBFtFzaUw3rz5dNKu1NJOUZAhEKPWAyTibcD23zFpXe3pvxeehvh4/Z84Loi9Lsg4eSltEGPGmk4XkmDFYE0fgZQ6b73shjJR5reo/6q6p0bv1Qdrxpl2qPctr27W4TrVejdGLH5k6rUlB6VJYrj4o7ggce3esKaxp8huBEqE+AWifmZj6BMsGFkT+Y2HEF09ymyr96icsDLOtjDv87cR1O1UG+bl0U8vQ0ZUbvcVNmcXX4HoYKk9xheNhzZZWASpJzHzPvKXK4hDHAz2QtvlCRgdxp0GzbMeIryQOc6c01hPU8C3E8s20rURHvMJqrZK6F0GqkVfhy9UZfj4PR2oRVONNREWTvWUaYOBqxN7Ey5YLR5Naat7768pYZqcLx4LI2vqyZOhKKf0= nagornov@testVM1
+
+

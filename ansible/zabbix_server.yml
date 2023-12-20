@@ -1,0 +1,9 @@
+---
+- hosts: zabbix
+  remote_user: nagornov
+  become: yes
+  become_method: sudo
+  vars:
+    - password_db: netology
+  roles:
+    - zabbix_server

@@ -1,0 +1,41 @@
+---
+    - name: Update apt cache
+      apt:
+        update_cache: yes
+
+    - name: Install gnupg, apt-transport-https
+      apt:
+        name:
+          - apt-transport-https
+          - gnupg
+        state: present
+
+    - name: Copy elasticsearch 
+      copy:
+        src: /home/nagornov/elasticsearch-7.14.1-amd64.deb
+        dest: /home/nagornov/
+
+    - name: Install elasticsearch
+      apt:
+        deb: /home/nagornov/elasticsearch-7.14.1-amd64.deb
+
+    - name: Copy config file for elasticsearch
+      copy:
+        src: /home/nagornov/terraform/elasticsearch.yml
+        dest: /etc/elasticsearch
+        mode: 0660
+        owner: root
+        group: elasticsearch
+
+    - name: Systemctl daemon reload
+      systemd:
+        daemon_reload: true
+        name: elasticsearch.service
+        state: started
+
+    - name: Systemctl enable elasticsearch
+      systemd:
+        name: elasticsearch.service
+        state: restarted
+        
+

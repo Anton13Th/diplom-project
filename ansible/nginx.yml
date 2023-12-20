@@ -1,0 +1,8 @@
+---
+- name: role
+  hosts: web
+  remote_user: nagornov
+  become: yes
+  become_method: sudo
+  roles:
+    - nginx
