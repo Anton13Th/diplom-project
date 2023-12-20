@@ -13,7 +13,7 @@ Security group
 <img src = "files/sg.png" width = 100%>
 
 Target group
-<img src = "files/tgroup.png" width = 100%>
+<img src = "files/tggroup.png" width = 100%>
 
 Backend group
 <img src = "files/backendgroup.png" width = 100%>
@@ -68,6 +68,4 @@ Kibana доступна по сслылке: http://51.250.43.56:5601
 http://51.250.41.127:8080
 <img src = "files/zabbixdash.png" width = 100%>
 
-Kibana доступна по сслылке: http://51.250.43.56:5601
-<img src = "files/kibana.png" width = 100%>
 
