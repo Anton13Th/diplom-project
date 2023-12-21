@@ -12,12 +12,12 @@
 
     - name: Copy elasticsearch 
       copy:
-        src: /home/nagornov/elasticsearch-7.14.1-amd64.deb
+        src: /home/nagornov/elasticsearch-7.9.3-amd64.deb
         dest: /home/nagornov/
 
     - name: Install elasticsearch
       apt:
-        deb: /home/nagornov/elasticsearch-7.14.1-amd64.deb
+        deb: /home/nagornov/elasticsearch-7.9.3-amd64.deb
 
     - name: Copy config file for elasticsearch
       copy:

@@ -11,12 +11,12 @@
 
     - name: Copy filebeat 
       copy:
-        src: /home/nagornov/filebeat-7.14.1-amd64.deb
+        src: /home/nagornov/filebeat-7.9.3-amd64.deb
         dest: /home/nagornov/
 
     - name: Install filebeat
       apt:
-        deb: /home/nagornov/filebeat-7.14.1-amd64.deb
+        deb: /home/nagornov/filebeat-7.9.3-amd64.deb
 
     - name: Copy config file for filebeat
       copy:
