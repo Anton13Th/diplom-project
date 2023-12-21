@@ -51,7 +51,7 @@ Snapshot
 Установка Kibana
 <img src = "files/7.png" width = 100%>
 
-Kibana доступна по сслылке: http://51.250.43.56:5601
+Kibana доступна по сслылке: http://51.250.43.37:5601
 <img src = "files/kibana.png" width = 100%>
 
 Далее установка Zabbix для обеспечения мониторинга: 
@@ -65,7 +65,7 @@ Kibana доступна по сслылке: http://51.250.43.56:5601
 <img src = "files/zabbixhosts.png" width = 100%>
 
 Настроил dashboard согласно заданию, Zabbix доступен по ссылке:  
-http://51.250.41.127:8080
+http://51.250.43.115:8080
 <img src = "files/zabbixdash.png" width = 100%>
 
 На этом всё, спасибо за обучение!

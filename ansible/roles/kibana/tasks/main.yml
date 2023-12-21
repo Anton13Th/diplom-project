@@ -26,7 +26,7 @@
 
   - name: Copy config file for kibana
     copy:
-      src: /home/nagornov/terraform/kibana1.yml
+      src: /home/nagornov/terraform/kibanaconf.yml
       dest: /etc/kibana/kibana.yml
       mode: 0644
       owner: root
