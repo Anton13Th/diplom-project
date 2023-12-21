@@ -9,14 +9,14 @@
       - gnupg
       state: present
 
-  - name: Get kibana.7.4.1
+  - name: Get kibana
     ansible.builtin.get_url:  
       url: https://mirror.yandex.ru/mirrors/elastic/7/pool/main/k/kibana/kibana-7.9.3-amd64.deb 
       dest: /home/nagornov/
 
   - name: Install kibana
     apt:
-      deb: /home/nagornov/kibana-7.4.1-amd64.deb 
+      deb: /home/nagornov/kibana-7.9.3-amd64.deb 
 
   - name: Systemctl daemon reload
     systemd:
