@@ -9,6 +9,8 @@
 5.Дэшборд nginx добавил:
 <img src = "files/zabbixnginx.png" width = 100%>
 
+*******************************************  
+
 Создание инфраструктуры с помощью Terraform
 <img src = "files/1.png" width = 100%>
 
