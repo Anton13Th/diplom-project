@@ -1,31 +1,31 @@
 [web]
-web-1 ansible_host=10.1.0.10 
-web-2 ansible_host=10.2.0.10 
+web-1 ansible_host=web-1.ru-central1.internal 
+web-2 ansible_host=web-2.ru-central1.internal
 
 [web:vars]
 ansible_ssh_user=nagornov
-ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q -i /home/nagornov/.ssh/id_rsa nagornov@51.250.38.118"'
+ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q -i /home/nagornov/.ssh/id_rsa.pub nagornov@51.250.38.118"'
 
 [zabbix]
-zabbix ansible_host=10.4.0.20
+zabbix ansible_host=zabbix.ru-central1.internal
 
 [zabbix:vars]
 ansible_ssh_user=nagornov
-ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q -i /home/nagornov/.ssh/id_rsa nagornov@51.250.38.118"'
+ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q -i /home/nagornov/.ssh/id_rsa.pub nagornov@51.250.38.118"'
 
 [bastion]
-bastion  ansible_host=51.250.38.118
+bastion ansible_host=bastion.ru-central1.internal
 
 [elasticsearch]
-elasticsearch ansible_host=10.3.0.100
+elasticsearch ansible_host=elasticsearch.ru-central1.internal
 
 [elasticsearch:vars]
 ansible_ssh_user=nagornov
-ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q -i /home/nagornov/.ssh/id_rsa nagornov@51.250.38.118"'
+ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q -i /home/nagornov/.ssh/id_rsa.pub nagornov@51.250.38.118"'
 
 [kibana]
-kibana ansible_host=10.4.0.100
+kibana ansible_host=kibana.ru-central1.internal
 
 [kibana:vars]
 ansible_ssh_user=nagornov
-ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q -i /home/nagornov/.ssh/id_rsa nagornov@51.250.38.118"'
+ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p -q -i /home/nagornov/.ssh/id_rsa.pub nagornov@51.250.38.118"'
